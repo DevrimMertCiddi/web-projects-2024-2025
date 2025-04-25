@@ -1,0 +1,130 @@
+body{
+    background-color: aquamarine;
+}
+
+
+#container{
+    background-color: aqua;
+    width: 800px;
+    margin: auto;
+    padding: 10px;
+}
+
+
+.hehe1{
+    border-bottom: 2px solid black;
+}
+
+nav{
+    background-color: blanchedalmond;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    /*li etiketlerini yan yana almak için onların taşıyıcısı olan ul etiketi flex yapılır*/
+    display: flex;
+    justify-content: center;
+}
+/*
+  GEREK KALMADI
+nav ul li{
+    float:left;
+}*/
+
+nav ul li a{
+    display: block;
+    background-color: white;
+    color: black;
+    margin-right: 10px;
+    padding: 5px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;  
+}
+
+nav ul li a:hover{
+    font-weight: bolder;
+    color:white;
+    background-color: black;
+    transition: all 0.3s;
+}
+
+#ust{
+    background-color: rgb(161, 161, 255);
+    display:flex
+}
+
+#logo{
+    flex: 1;
+    text-align: center;
+    align-self: center;
+}
+
+#slogan{
+    flex: 4;
+}
+
+#icerik{
+    background-color: aliceblue;
+    display: flex;
+}
+
+#sol-icerik{
+    flex:1;
+    padding: 10px;
+}
+
+#sag-icerik{
+    flex:5;
+    padding:10px;
+    background-color: bisque;
+}
+
+.sol-menu{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sol-menu li a{
+    display: block;
+    background-color: blueviolet;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-bottom: 8px;
+    text-align: center;
+    transition: all 1s;
+}
+
+.sol-menu li a:hover{
+    box-shadow: 0 5px 10px  black;
+    transition: all 0.3s;
+}
+
+.sol-resim{
+    float: left;
+    padding: 10px;
+}
+
+.alt{
+    background-color: coral;
+    padding: 10px 20px;
+    display: flex;
+}
+
+.sol-alt{
+    flex: 1;
+}
+
+.sag-alt{
+    flex: 1;
+}
+
+#baba{
+    color: red;
+    font-weight: 900;
+    font-style:oblique;
+}

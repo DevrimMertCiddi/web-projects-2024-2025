@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Başlangıç Bitiş Noktası</title>
+</head>
+
+<body>
+
+    <form name="form1">
+        <label for="">Başlangıç</label><br>
+        <select name="baslangic">
+            <script>
+                for (var i = 1; i <= 20; i++) {
+                    document.write("<option>" + i + "</option>")
+                }
+            </script>
+        </select><br>
+        <label for="">Bitiş</label><br>
+        <select name="bitis">
+            <script>
+                for (var i = 1; i <= 20; i++) {
+                    document.write("<option>" + i + "</option>")
+                }
+            </script>
+        </select>
+
+        <button type="button" onclick="yazdir()">PİRT</button> <br>
+        <p id="sonuc"></p>
+        <script>
+            function yazdir() {
+                document.getElementById("sonuc").innerHTML = " ";
+
+                var baslangicc = parseInt(document.forms["form1"]["baslangic"].value);
+                var bitiss = parseInt(document.forms["form1"]["bitis"].value);
+
+                if (baslangicc > bitiss) {
+                    for (var i = baslangicc; i >= bitiss; i--) {
+                        document.getElementById("sonuc").innerHTML += i + " ";
+                    }
+                } else {
+                    for (var i = baslangicc; i <= bitiss; i++) {
+                        document.getElementById("sonuc").innerHTML += i + " ";
+                    }
+                }
+            }
+        </script>
+    </form>
+
+</body>
+
+</html>

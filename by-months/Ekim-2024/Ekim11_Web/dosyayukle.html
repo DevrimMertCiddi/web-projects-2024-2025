@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dosya Yükle</title>
+</head>
+
+<body>
+    <form action="" name="DYukle" method="post">
+        <table>
+
+            <tr>
+                <td><b>Dosyanın Kalıcı Adı:</b></td>
+                <td><input type="text" name="kaliciad"></td>
+            </tr>
+            <tr>
+                <td align="right"><b>Dosya Seçiniz</b></td>
+                <td><input type="file" name="dosya" id=""></td>
+            </tr>
+            <tr>
+                <td align="right"><b>Dosya Türü</b></td>
+                <td><select name="dosya" id="">
+                        <option value="1">png</option>
+                        <option value="2">jpg</option>
+                        <option value="3">gif</option>
+                        <option value="4">docx</option>
+                        <option value="5">jpeg</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td align="right"><b>Kayıt Yeri</b></td>
+                <td>Resimler <input type="radio" name="Cinsiyet" id=""> <br>
+                    Belgeler <input type="radio" name="Cinsiyet" id=""></td>
+            </tr>
+            <tr>
+                <td align="right"></td>
+                <td><button>Yükle</button></td>
+            </tr>
+
+        </table>
+
+<hr>
+
+
+        <table>
+
+            <tr>
+                <td align="right" >Ad:</td>
+                <td><input type="text" name="ad"></td>
+            </tr>
+            <tr>
+                <td align="right">Soyad:</td>
+                <td><input type="text" name="soyad" id=""></td>
+            </tr>
+
+            <tr>
+                <td align="right">Cinsiyet</td>
+                <td>Bay <input type="radio" name="Cinsiyet" id=""> 
+                    Bayan <input type="radio" name="Cinsiyet" id=""></td>
+            </tr>
+            <tr>
+                <td align="right"></td>
+                <td><button>Gönder</button></td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+
+</html>

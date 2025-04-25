@@ -1,0 +1,87 @@
+@{
+    ViewData["Title"] = "DerinOgrenme";
+}
+
+
+
+<h1>Derin Öğrenme (Deep Learning) Nedir?</h1>
+
+<p class="lead bg-light border p-3">Derin öğrenme, verilen bir veri seti ile sonuçları tahmin eden
+    birden fazla katmandan oluşan bir makine öğrenme yöntemidir. Derin öğrenme, makine öğrenmesi ve
+    yapay zekâ birbirinden farklı anlamları olan terimlerdir. Derin öğrenme, makine öğrenmesinin; makine
+    öğrenmesi ise yapay zekânın alt dalı olarak özetlenebilir.</p>
+
+<img class="float-right" src="~/resimler/derin-ogrenme.png" alt="derin öğrenme">
+
+<p>Yapay zekâ, insan zekâsına benzer şekilde çeşitli görevleri yerine getiren ve sürekli kendini
+    geliştiren sistemler veya makinalardır.1950’lerde ortaya çıkan yapay zekâ hatalarından öğrenebilen
+    sistemler olduğu için sistemi sürekli iyileştirmektedir. Makine öğrenmesi ise 1980’lerde ortaya
+    çıkmış olup verilen bir veri kümesini işlemden geçirip tahminlerde bulunmak veya sınıflandırmaktır.
+    Makine öğrenme algoritmalarında iki tür öğrenme biçimi vardır: gözetimli ve gözetimsiz öğrenme.</p>
+
+<p>- Gözetimli öğrenme, etiketlenmiş verilerden öğrenmedir. Hem girdi hem de istenilen sonuç tanımlanır.
+    Tahmin hakkındaki doğruluk geri bildirimi ise kişi tarafından yapılır.</p>
+
+<p>- Gözetimsiz öğrenme, etiketsiz gözlemlerden öğrenme sürecidir. Sonuç verisiyle eğitime gerek yoktur.
+    Algoritmanın kendisi veriden sonuca varır. Kendinin keşfetmesi beklenir.</p>
+
+<p>Makine öğrenimi de yapay zekâ gibi uzun yıllar boyunda önemli bir gelişim gösterememiştir. 1990’lı
+    yıllarda veri madenciliğiyle popülerliği artmış ve 2000’li yılların başında ise derin öğrenme
+    gelişim göstermeye başlamıştır.</p>
+
+<p><strong>90’lardaki başarısızlığın sebepleri</strong>: </p>
+
+<ul class="list-unstyled">
+    <li>- Veri setlerinin yetersiz olması</li>
+    <li>- Bilgisayarların çok güçsüz ve CPU açısından yetersiz kalması</li>
+    <li>- Yanlış bir şekilde ilkleme ( initialization)</li>
+    <li>- Yanlış non­lineer aktivasyon fonksiyonları</li>
+</ul>
+
+<p>Zamanla teknolojinin gelişmesi bilgisayarların performansının artmasını sağladı. Yapay zekâ
+    işlemlerinde yetersiz kalan bilgisayarlar güçlendi, veri erişim kolaylaşarak algoritmaların ihtiyacı
+    olan veri setleri arttı ve var olan algoritmalar gelişti veya yeni algoritmalar geliştirildi.
+    Böylece yapay zekâ uygulamalarında gelişim gözlemlenmeye başladı.</p>
+
+<p>Derin öğrenme gözetimli, yarı gözetimli veya gözetimsiz olarak gerçekleştirilebilir. Derin öğrenmede
+    çok sayıda veri girişiyle ayırt edici özellikleri kendisi öğrenir. Öğrenme işlemini için ne kadar
+    çok veri girişi olursa o kadar çok başarılı olunur. Veriler birden çok katmandan geçer. Üst
+    katmanlar daha çok ayrıntı çıkaran katmanlardır.</p>
+
+<h2>Üç ana derin model çeşidi: </h2>
+
+<ul class="list-styled">
+    <li>- Çok katmanlı Perceptron (Multilayer Perceptrons)</li>
+    <li>- Evrişimsel Sinir Ağı (Convolutional Neural Networks)</li>
+    <li>- Yinelgeli Sinir Ağı (Recurrent Neural Networks)</li>
+</ul>
+
+<h2>Derin öğrenmenin kullanım alanları:</h2>
+
+<ul class="list-styled">
+    <li>- Yüz tanıma sistemlerinde</li>
+    <li>- Ses tanıma sistemlerinde</li>
+    <li>- Araçlarda otopilot özelliğinde veya sürücüsüz araçlarda kullanılmaktadır.</li>
+    <li>- Alarm sistemlerinde, kamera kayıtlarını sürekli kontrol etmek yerine, yalnızca olağandışı
+        hareketlerde alarm sisteminin devreye girmesi gibi teknolojiler derin öğrenme sayesinde mümkün
+        olmaktadır.</li>
+    <li>- Sağlık sektöründe kanser araştırmalarında, zaman kaybını ortadan kaldırmaktadır. Kanserli
+        hücre örneklerinin tanıtıldığı derin öğrenme algoritmaları, yeni hücrelerin kanserli olup
+        olmadığı tanısını koymakta hem daha hızlı hem de daha başarılı oluyor.</li>
+    <li>- Görüntü iyileştirilmesinde</li>
+    <li>- Tavsiye sistemlerinde, beğenilebilecek müzik ve film önerileri sunmada</li>
+    <li>- Siber tehdit analizlerinde de derin öğrenme yöntemleri geliştirilebilir. Yukarıda verilen
+        örneklerin dışında birçok örnek verilebilir.</li>
+</ul>
+
+<p>Türkiye’de yapılan derin öğrenme çalışmalarına örnek olarak ASELSAN’ın arge merkezinde yürütülen
+    silah ve güvenlik sistemleri için görüntü ve doğal dil işleme alanlarında faaliyetler yapılmaktadır.
+    Başka bir proje OttOCR, Osmanlıca karakter tanıma sistemi ve Open zeka projesi görüntü ve video
+    tanımlama için derin öğrenme API’leri sunmaktadır.</p>
+
+<p>Yapay zekâ uygulamalarında en çok kullanılan programlama dilleri python, c/c++, java ve R olarak
+    sıralanabilir. Derin öğrenmede en çok kullanılan dil ise pythondır. Veri görselleştirme içinse R
+    programlama dili tercih edilmektedir.</p>
+
+<p>Deep learning için kullanılabilecek veri setlerine buradan ve diğer verisi seti adresi olarak buradan
+    ulaşabilirsiniz.</p>

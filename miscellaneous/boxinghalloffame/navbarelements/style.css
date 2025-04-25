@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&family=Roboto:wght@400;700&family=Oswald:wght@400;700&family=Open+Sans:wght@400;600&family=Lora:wght@400;700&family=Poppins:wght@400;500;600&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(145deg, #880808, #4e1f1f, #ffd700);
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;  
+}
+
+#gold {
+    color: #ffd700;
+}
+
+#hall {
+    color: white;
+}
+
+#b-red {
+    color: #880808;
+}
+
+.ust {
+    background-color: #212121;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    transition: background-color 0.3s ease;
+}
+
+.ust:hover {
+    background-color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+#container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px #ffd700;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+}
+
+#container:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 16px 100px rgba(0, 0, 0, 0.5);
+}
+
+#container:not(:hover) {
+    opacity: 80%;  
+}
+
+
+header h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffd700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 15px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffd700;
+    font-size: 1em;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::before {
+    width: 100%;
+}
+
+nav ul li a:hover {
+    color: #880808;
+}
+
+
+#b-red {
+
+    color: #880808;
+}
+
+#gold {
+
+    color: #ffd700;
+}
+
+#bhf{
+    margin-top: 50px;
+    font-size: 3rem;
+}
+
+#sagacekticari{
+    font-size: 2em;
+    margin-top: 1em;
+    text-align: center;
+    border-bottom: #ffd700 3px solid;
+}

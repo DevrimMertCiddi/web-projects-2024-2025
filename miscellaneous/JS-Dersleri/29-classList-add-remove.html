@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metin Alanı</title>
+
+    <style>
+        .kalinYaz{
+            font-weight: bold;
+        }
+
+        .egikYaz{
+            font-style: italic;
+        }
+
+        .ciziliYaz{
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+<body>
+    <form name="form1">
+        <p>
+            <label for="">Metin Yazınız</label> <br>
+            <textarea name="metin" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <button type="button" onclick="metinYaz()">Gönder</button>
+        </p>
+
+        <p>
+            <input type="checkbox" name="kalin" id="" onchange="kalinYap(this.checked)"> Kalın
+            <input type="checkbox" name="egik" id="" onchange="egikYap(this.checked)"> İtalik
+            <input type="checkbox" name="cizili" id="" onchange="ciziliYap(this.checked)"> Altı Çizili
+        </p>
+    </form>
+
+    <div id="yazi"></div>
+
+    <script>
+        var yazilan = document.getElementById("yazi")
+        function metinYaz(){
+            var metin = document.forms["form1"]["metin"].value;
+            document.getElementById("yazi").innerHTML= metin;
+        }
+
+        function kalinYap(isaret){
+            switch(isaret){
+                case true: yazilan.classList.add("kalinYaz"); break;
+                default: yazilan.classList.remove("kalinYaz");
+            }
+        }
+    </script>
+
+</body>
+</html>

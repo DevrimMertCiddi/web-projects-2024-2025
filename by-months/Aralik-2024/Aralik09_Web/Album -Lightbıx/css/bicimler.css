@@ -1,0 +1,71 @@
+body{
+    background-color: brown;
+    color: #333;
+}
+
+#kaplayici{
+    width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+#ust{
+    background-color: #333;
+    color: white;
+    padding: 5px;
+}
+
+#ust img{
+    float: left;
+}
+
+.temizle{
+    clear: both;
+}
+
+#ust h1{
+    float: left;
+    line-height: 104px;
+    margin: 0 0 0 20px;
+}
+
+#menu{
+    background-color: black;
+    padding: 5px;
+}
+
+#menu ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+#menu ul li{
+    float: left;
+}
+
+#menu ul li a{
+    display: block;
+    margin-right: 10px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+#icerik{
+    padding: 5px;
+}
+
+#icerik img{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 3px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+#alt{
+    background-color: darkslategray;
+    color: white;
+    padding: 5px;
+}

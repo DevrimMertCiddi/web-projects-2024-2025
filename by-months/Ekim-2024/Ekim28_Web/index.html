@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Form Uygulaması</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="iletisim">
+        <form action="blabal.aspx" method="post" name="form1">
+
+            
+            <p>
+                <label for="">Adınız Soyadınız:</label><br>
+                <input type="text" id="" name="adsoyad" placeholder="Adınızı Ve Soyadınız Giriniz." class="formlar"></input>
+            </p>
+
+            <p>
+                <label for="">Email Adresiniz:</label><br>
+                <input type="email" name="mail" id="" placeholder="Mail Adfesinizi Giriniz." class="formlar">
+            </p>
+
+            <p>
+                <label for="">Konu:</label>
+                <select name="konu" id="" class="formlar">
+                    <option value="0">Şikayet</option>
+                    <option value="1">Bilgi Edinme</option>
+                    <option value="2">Tavsiye</option>
+                    <option value="3">Teşekkür</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="">Mesajınız:</label><br>
+                <textarea name="mesaj" id="" cols="30" rows="5" placeholder="Mesajınızı Buraya Girin" class="formlar"></textarea>
+            </p>
+
+            <p>
+                <input type="submit" value="GÖNDER">
+            </p>
+        </form>
+    </div>
+</body>
+</html>

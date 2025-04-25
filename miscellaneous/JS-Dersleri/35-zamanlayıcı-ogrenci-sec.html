@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        #dugmeler{
+            text-align: center;
+        }
+        #ogrenci{
+            text-align: center;
+            font-size: 50px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <p id="dugmeler">
+        <button id="basla" onclick="baslat();">Başlat</button>
+        <button id="secim" onclick="sec();" disabled>Seç</button>
+    </p>
+    <div id="ogrenci">11/B Öğrencileri</div>
+    
+    <script>
+        var ogrenciler = ["Mert Efe", "Tuğra Kaan", "Devrim Mert", "Caner", "Murathan", "Eylül", "Yusuf", "Sude", "Kerem", "Murat Muaz", "Samet Arda"];
+        var i = 0;
+        var timer;
+        function baslat(){
+            timer = setInterval(degis, 20);
+            document.getElementById("basla").disabled = true;
+            document.getElementById("secim").disabled = false;
+        }
+        function degis(){
+            document.getElementById("ogrenci").innerHTML = ogrenciler[i];
+            i++;
+            if (i>=ogrenciler.length){
+                i=0;
+            }
+        }
+        function sec(){
+            document.getElementById("basla").disabled = false;
+            document.getElementById("secim").disabled = true;
+            clearInterval(timer);
+            document.getElementById("ogrenci").innerHTML = "Kerem"
+        }
+    </script>
+</body>
+</html>

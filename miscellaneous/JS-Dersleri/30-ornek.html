@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #kaplama{
+            height: 300px;
+            width: 450px;
+            border: 1px solid black;
+            background-color: pink;
+            
+        }
+        .pembe{
+            background-color: pink !important;
+        }
+        .mavi{
+            background-color: blue  !important;
+        }
+    </style>
+</head>
+<body>
+   
+        <select name="" id="renk" onchange="renkliYap(this.value)">
+            <option value="0">Pembe</option>
+            <option value="1">Mavi</option>
+        </select>
+   <div id="kaplama">
+
+   </div>
+    <script>
+        function renkliYap(Renk){
+            var divi=document.getElementById("kaplama")
+            switch(Renk){
+                case "0":divi.classList.add("pembe"),divi.classList.remove("mavi");break; 
+                
+                case "1":divi.classList.add("mavi"),divi.classList.remove("pembe");break;             
+
+                default:divi.classList.add("pembe");
+            }
+        }
+    </script>
+</body>
+</html>

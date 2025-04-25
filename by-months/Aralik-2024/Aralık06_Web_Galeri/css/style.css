@@ -1,0 +1,59 @@
+body {
+  background-color: brown;
+}
+
+.container {
+  width: 900px;
+  margin: auto;
+  background-color: white;
+}
+
+.ust {
+  display: flex;
+}
+
+.logo {
+  flex: 1;
+}
+
+.baslik {
+  flex: 4;
+  text-align: center;
+}
+
+#menu {
+  background-color: black;
+  padding: 5px;
+}
+
+#menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#menu a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+  text-align: center;
+}
+
+#menu img {
+  border: 1px solid white;
+}
+
+section {
+  padding: 5px;
+  text-align: center;
+}
+
+section img {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 3px;
+  margin: 5px;
+}

@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap");
+body {
+  font-family: "Arimo", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#satir1 {
+  background-color: white;
+  position: sticky;
+  top: 0;
+}
+
+.kapsayici {
+  width: 900px;
+  margin: auto;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.menu li a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  padding: 5px 15px;
+}
+
+/*satır 1 sonu*/
+
+#satir2 {
+  background-image: url(../resimler/ust-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  text-align: center;
+  color: white;
+  padding: 50px 0px;
+}
+
+#satir2 h1 {
+  color: #dcac1d;
+  font-size: 2.5em;
+  text-shadow: 0 0 5px black;
+  margin-bottom: 0;
+}
+
+#satir2 h2 {
+  background-color: #e44f52;
+  display: inline-block;
+  padding: 0 10px;
+}
+
+#satir2 a {
+  display: inline-block;
+  color: white;
+  background-color: #337ab7;
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+#satir2 a:hover {
+  background-color: white;
+  color: #337ab7;
+  transition: all 0.3s;
+  font-weight: 900;
+}
+
+#satir3 {
+  background-color: #ddd;
+  padding: 15px 0px;
+}
+
+.paketler ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#satir3 h2 {
+  text-align: center;
+}
+
+.paketler {
+  display: flex;
+  justify-content: center;
+}
+
+.paket {
+  flex: 1;
+  background-color: white;
+  padding: 25px;
+  border-radius: 5px;
+  margin: 5px;
+  box-shadow: 0 0 20px #999;
+  transition: all 0.3s;
+  line-height: 160%;
+}
+.paket:hover {
+  background-color: #d3edef;
+  transition: all 0.3s;
+}
+
+.paket h3 {
+  color: #337ab7;
+  text-align: center;
+}
+
+.paket p {
+  text-align: center;
+}
+
+.paket span i {
+  display: block;
+  margin: auto;
+  font-size: 3em;
+  background-color: #337ab7;
+  color: white;
+  line-height: 80px;
+  text-align: center;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.paket a {
+  display: inline-block;
+  background-color: #5cb85c;
+  text-decoration: none;
+  color: white;
+  padding: 15px 25px;
+  transition: all 0.3s;
+  border-radius: 10%;
+}
+
+.paket a:hover {
+  background-color: white;
+  color: #5cb85c;
+  transition: all 0.3s;
+  font-weight: 900;
+  font-size: larger;
+  border-radius: 25%;
+}
+
+#satir4 {
+  background-image: url(../resimler/alt-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: justify;
+  padding: 20px 0;
+  line-height: 140%;
+}
+
+.sag-resim {
+  float: right;
+  margin-left: 15px;
+}
+
+.temizle {
+  clear: both;
+}
+
+#satir5 {
+  background-color: #333;
+  padding: 15px 0;
+}
+
+#satir5 img {
+  border: 1px solid white;
+  margin: 5px;
+}
+
+footer {
+  padding: 15px;
+  background-color: #e44f52;
+}
+
+footer span {
+  float: right;
+  font-size: 1.5em;
+}

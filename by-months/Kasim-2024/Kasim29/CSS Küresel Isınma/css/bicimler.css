@@ -1,0 +1,108 @@
+body {
+  background-image: url(../resimler/body-bg.jpg);
+}
+
+#container {
+  width: 900px;
+  margin: auto;
+  background-color: white;
+}
+
+#menu {
+  background-color: #333;
+  border-bottom: 3px solid white;
+}
+
+#menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  /* justify-content: center; flexle ortalamak için*/
+}
+
+#menu ul li a {
+  display: block;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-right: 1px solid white;
+  transition: all 0.3s;
+}
+
+#menu ul li a:hover {
+  background-color: #dfb708;
+  transition: all 0.3s;
+}
+
+#content {
+  display: flex;
+  padding: 10px;
+}
+
+#left-content {
+  flex: 4;
+  padding: 10px;
+}
+
+#right-content {
+  flex: 1;
+  padding: 10px;
+}
+
+.haber {
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  margin-bottom: 15px;
+  background-color: #eaeaea;
+  padding: 10px;
+}
+
+.haber img {
+  float: left;
+  margin-right: 10px;
+  width: 200px;
+  height: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: white;
+}
+
+.haber p {
+  text-align: justify;
+  line-height: 140%;
+}
+
+.haber a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: green;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+
+.temizle {
+  clear: both;
+}
+
+.haber a:hover {
+  transition: all 0.5s;
+  background-color: #dfb708;
+}
+
+#right-content p {
+  background-color: bisque;
+  padding: 10px;
+  font-size: medium;
+  border-radius: 5px;
+  line-height: 140%;
+}
+
+footer {
+  background-color: #900;
+  color: white;
+  padding: 10px 15px;
+  font-size: small;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-İle ekrana mesaj yazdırma</title>
+</head>
+<body>
+    <script>
+        //document.write() sayfa ilk açılırken kullanılır.Sonradan Kullanılmaz Çünkü tüm sayfayı siliyor
+        document.write("<h1>Ekrana Mesaj Yazdırıyarum </h1>");
+    </script>
+</body>
+
+    <button onclick="document.write('<h1>BASMA DEDİMYA LAN</h1>');">BASMA BANA</button>
+    
+    <h2 id="mesaj"></h2>
+    <h2 id="yas"></h2>
+
+    <script>
+        // inner html ile bir etiketin içine mesaj yazdırmak için önce o etiketi bulmanız gerekir. document.getElementById("id")
+        // Genelde sayfa ilkkez açılırken kullanılan document.write("") ile mesaj yazdırabilirsiniz.
+        // Açılıt Kutuda bir uyarı mesajı vermek için alert("") fonksiyonu kullanılır.
+        var yil = 2025;
+        var dyili = prompt("Doğum Yılınızı giriniz");
+        var yas = yil-dyili;
+        document.getElementById("mesaj").innerHTML=yil+"yeni dönem hayırlı olsun.";
+        document.getElementById("yas").innerHTML="Yaşınız:"+yas;
+
+        if(yas<18){
+            alert("Ehliyet alamazsınız");
+        }
+
+        else{
+            alert("Ehliyet alamazsınız");
+        }
+
+        console.log("Yaş:"+yas)
+        console.log("dogum yılı" + dyili)
+    </script>
+</html>

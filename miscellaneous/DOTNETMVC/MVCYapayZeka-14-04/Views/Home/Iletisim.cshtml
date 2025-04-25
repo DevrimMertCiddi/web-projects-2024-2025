@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "İletişim";
+}
+
+<h1>İletişim Bilgilerimiz</h1>
+
+                <div class="card">
+                <div class="card-header">
+                    <h3>Adres</h3>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Yalı Mah. Fan Deresi Sk. No:14</li>
+                    <li class="list-group-item">Akçakoca/DÜZCE</li>
+                </ul>
+                </div>
+
+                <div class="card mt-3">
+                <div class="card-header">
+                    <h3>Telefon</h3>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">0380 611 4563</li>
+                </ul>
+                </div>
+
+                <div class="card mt-3">
+                <div class="card-header">
+                    <h3>E-Posta</h3>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <p><a class="btn btn-info" href="#" onclick="epostaGoster()">E-Posta adresini göster</a></p>
+                        <p><a class="d-none" id="eposta" href="mailto:132597@meb.k12.tr">132597@meb.k12.tr</a></p>
+                    </li>
+                </ul>
+                </div>
+
+                <script>
+                    function epostaGoster(){
+                        document.getElementById("eposta").className = "d-block";
+                    }
+                </script>

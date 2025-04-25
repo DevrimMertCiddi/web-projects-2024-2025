@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label><img src="resimler/lamba-kapali.gif" alt="" id="resim"></label>
+
+    <p id="yazi"></p>
+
+    <script>
+        // 2 saniyede bir yanıp söncek
+        var timer = setInterval(lamba, 50);
+        var durum = false;
+        var x = 0;
+        var xhiz = 10;
+        function lamba(){
+            if(x==1800){
+                xhiz = -10;
+            }
+            else if(x==0){
+                xhiz = 10;
+            }
+            x += xhiz;
+            document.getElementById("yazi").innerHTML = x + " | " + xhiz;
+            document.getElementById("resim").style.marginLeft=x+"px";
+            if(durum){
+                document.getElementById("resim").src = "resimler/lamba-kapali.gif";
+                durum=false;
+            }
+            else{
+                document.getElementById("resim").src = "resimler/lamba-acik.gif"
+                durum=true;
+                
+            }
+            
+        }
+    </script>
+</body>
+</html>

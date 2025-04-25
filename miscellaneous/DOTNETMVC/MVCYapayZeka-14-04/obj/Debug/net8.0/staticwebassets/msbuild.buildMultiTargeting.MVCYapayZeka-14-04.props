@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\MVCYapayZeka-14-04.props" />
+</Project>

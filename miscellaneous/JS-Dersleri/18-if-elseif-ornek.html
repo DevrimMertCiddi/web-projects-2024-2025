@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>else if orrrrnek</title>
+</head>
+
+<body>
+    <form name="form1">
+        <p>
+            <label for="">Kullanıcı Adınız:</label>
+            <br>
+            <input type="text" name="kAdi" id="">
+        </p>
+
+        <p>
+            <label for="">Şifrenizi Giriniz:</label>
+            <br>
+            <input type="text" name="sifree">
+        </p>
+
+
+        <p>
+            <button type="button"  onclick="indur()">Giriş Yap!</button>
+        </p>
+
+
+        <p>
+            <button type="button" id="indir" style="display: none;">İndir!</button>
+        </p>
+
+
+        <script>
+
+            function indur() {
+                var kullaniciadi = document.forms["form1"]["kAdi"].value;
+                var sifre = document.forms["form1"]["sifree"].value;
+
+                if (kullaniciadi == "Devrim" && sifre == "pirt") {
+                    document.getElementById("indir").style.display = "block";
+                    alert("Kullanici adi ve sifre doğru");
+                }
+
+                else {
+                    alert("Kyllanıcı Adı Veya Şifreniz Hatalıdır");
+                    document.getElementById("indir").style.display = "none";
+                }
+
+            }
+
+        </script>
+
+    </form>
+</body>
+
+</html>

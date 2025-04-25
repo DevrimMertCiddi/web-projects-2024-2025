@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Ile Css Değiştirme</title>
+    <script>
+        function gizle() {
+            document.getElementById("resim").style.display = "none";
+        }
+
+        function goster() {
+            document.getElementById("resim").style.display = "block";
+        }
+
+        var genislik = 397;
+
+        function kucult() {
+            genislik = genislik - 30;
+            document.getElementById("resim").style.width = genislik + "px";
+            document.getElementById("resim").style.height = "auto";
+        }
+
+        function buyut() {
+            genislik = genislik + 30;
+            document.getElementById("resim").style.width = genislik + "px";
+            document.getElementById("resim").style.height = "auto";
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <form action="" name="form1">
+        <p>
+            <button type="button" onclick="gizle()">Gizle</button>
+            <button type="button" onclick="goster()">Göster</button>
+            <button type="button" onclick="buyut()">Büyüt</button>
+            <button type="button" onclick="kucult()">Küçült</button>
+        </p>
+
+
+        <p>
+            <img id="resim" src="JavaScript/resimler/tux.png" alt="">
+        </p>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+body {
+	background-image: url(../resimler/body-bg.jpg);
+	margin-top:20px;
+	font-family:"Trebuchet MS";
+}
+
+#kaplayici {
+	width: 680px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #FFFFFF;
+	border: thin solid #393939;
+}
+
+#ust h1 {
+	text-align: center;
+}
+#icerik {
+	padding:10px;
+}
+
+.temizle{
+	clear:both;
+}
+
+#alt{
+	background-color:#333;
+	color:#eaeaea;
+	padding:10px;
+	font-size:small;
+}

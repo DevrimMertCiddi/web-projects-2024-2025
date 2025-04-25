@@ -1,0 +1,61 @@
+body{
+    background-attachment: fixed;
+    background-image: url(../assets/resimler/ataturkbackgorund.jpg);
+    text-shadow: 0 0 10px black;
+}
+
+
+#kapsayici{
+    width: 1000px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 15px;
+    opacity: 55%;
+}
+
+#ust{
+    width: 550px;
+    margin: auto;
+    text-align: center;
+    border: 2px inset rgb(147, 8, 8);
+    background-color: rgb(147, 8, 8);
+    font-weight: bolder;
+    color: #fff;
+    border-radius: 15px;
+    opacity: 85%;
+}
+
+#sol{
+    /*öncelikle yan yana gelecek olan divlerin genişliği verilir sonra float yapılır*/
+    width: 50%;
+    float: left;
+    background-color: white;
+    border: 2px solid black;
+    box-sizing: border-box;
+    padding: 15px;
+    min-height: 500px;
+    border-radius: 15px;
+    
+}
+
+#sag{
+    width: 50%;
+    float: left;
+    background-color: white;
+    border: 2px solid black;
+    box-sizing: border-box;
+    padding: 15px;
+    min-height: 500px;
+    border-radius: 15px;
+}
+
+#alt{
+    text-align: center;
+    font-size: xx-large;
+    color: rgb(147, 8, 8);
+    font-style: italic;
+}
+
+.temizle{
+    clear: both;
+}

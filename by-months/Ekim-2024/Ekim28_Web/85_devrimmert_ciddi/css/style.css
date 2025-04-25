@@ -1,0 +1,56 @@
+.baslikdiv{
+    font-weight: bolder;
+}
+
+#logo{
+    width: 230;
+    height: auto;
+}
+
+.ust{
+    background-color: rgb(0, 252, 63);
+    padding: 15px;
+    color: white;
+    position: sticky;
+    top: 0;
+    opacity: 95%;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+
+#menu{
+
+
+}
+
+#menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu ul li{
+    float:left;
+}
+
+.menu ul li a {
+    display: block;
+    border: 1px solid white;
+    padding: 5px 15px;
+    margin-right: 15px;
+    text-decoration: none;
+    color:white;
+    background-color: rgb(5, 120, 1);
+}
+
+#menu ul li a:hover{
+
+}
+
+.temizle{
+    clear: both;
+}

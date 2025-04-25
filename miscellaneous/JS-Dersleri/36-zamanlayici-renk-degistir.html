@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Renk Değiştir</title>
+
+    <style>
+      #kutu {
+        width: 300px;
+        height: 300px;
+        border: 1px solid black;
+        border-radius: 10px;
+      }
+      .yesil {
+        background-color: green;
+      }
+      .kirmizi {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      <button id="dugme" onclick="renklendir();">Renklendir</button>
+    </p>
+    <div id="kutu"></div>
+    <script>
+      var timer;
+      var renk = "kirmizi";
+      function renklendir() {
+        timer = setInterval(degis, 500);
+        document.getElementById("dugme").disabled = true;
+      }
+      function degis() {
+        if (renk == "kirmizi") {
+          renk = "yesil";
+          document.getElementById("kutu").classList.add("yesil");
+          document.getElementById("kutu").classList.remove("kirmizi");
+        } else {
+          renk = "kirmizi";
+          document.getElementById("kutu").classList.remove("yesil");
+          document.getElementById("kutu").classList.add("kirmizi");
+        }
+      }
+    </script>
+  </body>
+</html>

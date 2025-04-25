@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #121212;
+  color: #e5e5e5;
+  line-height: 1.6;
+  font-size: 1em;
+}
+
+header {
+  background-color: #000;
+  color: #ffd700;
+  text-align: center;
+  padding: 30px;
+}
+
+header h1 {
+  font-family: "Bebas Neue", serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 15px 0;
+  margin-top: 20px;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav a {
+  color: #ffd700;
+  font-size: 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+nav a:hover {
+  opacity: 100%;
+  font-size: 1.6em;
+  transition: all 0.5s ease;
+  text-decoration: underline;
+}
+
+
+nav a:not(hover) {
+  opacity: 50%;
+}
+
+
+section {
+  margin: 50px auto;
+  padding: 30px 10%;
+  text-align: center;
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+h2, h3 {
+  color: #ffd700;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+p {
+  color: #e5e5e5;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+ul li {
+  font-size: 1.3em;
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#debut img, #bestfights img, #achievements img, #struggles img {
+  margin-bottom: 30px;
+}
+
+footer {
+  background-color: #000;
+  color: #ffd700;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.1em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+}
+
+section:hover {
+  background-color: #444;
+  font-size: 1.2em;
+  transition: all 0.3s ease;
+}
+
+h2:hover, h3:hover {
+  color: #fff;
+}
+
+#gold {
+  color: #ffd700;
+}
+
+#hall {
+  color: white;
+}
+
+#b-red {
+  color: #880808;
+}
+
+.ust {
+  background-color: #212121;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+.tirnak{
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+}

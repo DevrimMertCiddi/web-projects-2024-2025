@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewData["Title"] - Yapay Zeka</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="~/css/bicimler.css" asp-append-version="true" />
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-lg">
+            <a class="navbar-brand" asp-asp-controller="Home" asp-action="Index">AI <img class="img-fluid" src="~/resimler/logo.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" asp-asp-controller="Home" asp-action="Index">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Yapay Zeka Hakkında
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" asp-controller="Home" asp-action="YapayZekaNedir">Yapay Zeka Nedir?</a></li>
+                            <li><a class="dropdown-item" asp-controller="Home" asp-action="YapayZekaTarihcesi">Yapay Zeka Tarihçesi</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item"asp-controller="Home" asp-action="UygulamaAlanlari">Uygulama Alanları</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Yapay Zekaya Giriş
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" asp-controller="Home" asp-action="TemelTerimler">Temel Terimler</a></li>
+                            <li><a class="dropdown-item" asp-controller="Home" asp-action="MakineOgrenmesi">Makine Öğrenmesi</a></li>
+                            <li><a class="dropdown-item" asp-controller="Home" asp-action="DerinOgrenme">Derin Öğrenme</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" asp-controller="Home" asp-action="HangiProgramlamaDilleri">Hangi Programlama
+                                    Dilleri</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-asp-controller="Home" asp-action="Iletisim">İletişim</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-lg bg-white pt-3">
+        <div class="row mb-3">
+            <img class="img-fluid" src="~/resimler/yapay-zeka.jpg" alt="yapay zeka">
+        </div>
+
+        <!-- ****************************Değişen içerik bölümünün başlangıcı************************* -->
+
+        
+                @RenderBody()
+        
+
+        <!-- ****************************Değişen içerik bölümünün sonu************************* -->
+
+        <div class="row text-light bg-secondary mt-3">
+            <div class="col-lg-12 py-3">
+                &copy; 2025 - Yapay Zeka - Eğitim amaçlıdır.
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>

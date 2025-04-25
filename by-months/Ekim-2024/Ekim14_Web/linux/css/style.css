@@ -1,0 +1,74 @@
+body {
+  background-image: url(../resimler/back_ebru.jpg);
+  background-attachment: fixed;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#kaplayici {
+  width: 900px;
+  background-color: snow;
+  margin: auto;
+  border: 2px solid rgb(4, 0, 4);
+  box-shadow: 0px 0px 30px 15px rgb(137, 0, 222);
+  border-radius: 20px 20px 20px 20px; /*ustsol ustsag altsag altsol*/
+  padding: 15px; /*ustsol ustsag altsag altsol*/
+}
+
+#anabaslik {
+  font-size: 50px;
+  color: cadetblue;
+  text-align: center;
+  text-shadow: 0 0 10px;
+}
+
+img {
+  border: 2px double;
+  border-radius: 7px;
+  background-color: cadetblue;
+  margin-right: 15px;
+}
+
+p {
+  text-indent: 15px;
+  text-align: justify;
+}
+
+h2{
+    font-size: 30px;
+    text-decoration: underline;
+    color: crimson;
+}
+
+#menu{
+    list-style-type: none ;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+#menu li{
+
+}
+
+#menu li a{
+    display: block;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 7px;
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    margin-bottom: 2px;
+    text-align: center;
+    transition: all 1s;
+}
+
+
+#menu li a:hover{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+    background-color: aliceblue;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+   transition: all 0.75s;
+}

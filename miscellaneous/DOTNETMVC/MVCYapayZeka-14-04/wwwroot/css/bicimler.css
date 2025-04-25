@@ -1,0 +1,6 @@
+﻿body {
+  margin-top: 60px;
+  background-image: url(../resimler/body-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}

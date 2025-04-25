@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Altın Satın Al</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script>
+        function hesapla() {
+            var sayii1 = document.forms["formm"]["sayi1"].value;
+            var sayii2 = document.forms["formm"]["sayi2"].value;
+            var secilenislem = document.forms["formm"]["islemler"].value
+            var sonucc;
+            if (secilenislem == 1) {
+                sonucc = Number(sayii1) + Number(sayii2);
+                document.getElementById("sonuc").innerHTML = "Girdiğiniz Sayıların Toplamı:" + sonucc + "'dır";
+            }
+
+            else if (secilenislem == 2) {
+                sonucc = Number(sayii1) - Number(sayii2);
+                document.getElementById("sonuc").innerHTML = "Girdiğiniz Sayıların Çıkarımı:" + sonucc + "'dır";
+            }
+
+
+            else if (secilenislem == 3) {
+                sonucc = Number(sayii1) * Number(sayii2);
+                document.getElementById("sonuc").innerHTML = "Girdiğiniz Sayıların Çarpımı:" + sonucc + "'dır";
+            }
+
+
+            else if (secilenislem == 4) {
+                sonucc = Number(sayii1) / Number(sayii2);
+                document.getElementById("sonuc").innerHTML = "Girdiğiniz Sayıların Bölümü:" + sonucc + "'dır";
+            }
+
+
+            else {
+                document.getElementById("sonuc").innerHTML = "NAPTINLAN";
+            }
+
+        }
+    </script>
+
+</head>
+
+<body data-bs-theme="dark">
+
+    <div class="container" data-bs-theme="dark">
+        <div class="row  mt-5">
+            <div class="col-6 offset-3 text-center">
+                <form name="formm" onsubmit="hesapla(); return false;">
+                    <p>
+                        <label class="display-5">SAYI-1:</label> <br> <br>
+                        <input class="form-control" type="number" name="sayi1"><br>
+                        <label class="display-5">SAYI-2:</label> <br> <br>
+                        <input class="form-control" type="number" name="sayi2"><br>
+                    </p>
+
+                    <p>
+                        <button class="btn btn-danger p-3 w-100" type="submit">İşlem Yap</button>
+                    </p>
+
+                    <p>
+                        <center>
+                            <select class="form-select p-4 w-75 text-center" name="islemler">
+                                    <option value="1">Toplama</option>
+                                    <option value="2">Çıkarma</option>
+                                    <option value="3">Çarpma</option>
+                                    <option value="4">Bölme</option>
+                            </select>
+                        </center>
+                    </p>
+
+                    <h1 class="alert alert-primary" id="sonuc"></h1>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

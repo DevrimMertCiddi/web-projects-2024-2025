@@ -1,0 +1,89 @@
+body{
+    background-image: url(../resimler/body-bg.jpg);
+    background-attachment: fixed;
+}
+#kapsayici{
+    width: 800px;
+    margin: auto;
+    background-color: white;
+    border: 2px solid #666;
+    
+}
+#menu{
+    background-color: #999;
+    padding: 5px 20px;  
+}
+#menu ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+#menu ul li{
+    float: left;
+}
+#menu ul li a{
+    display: block;
+    border: 2px solid #f2f2f2;
+    padding: 7px 20px;
+    margin-right: 5px;
+    text-decoration: none;
+    color: white;
+    background-color: #075381;  
+    transition: all 0.3s;
+}
+#menu ul li a:hover{
+    background-color: #0C7EC4;
+    transition: all 0.75s;
+    font-size: larger;
+}
+
+
+h1{
+    padding: 10px;
+    color: #4E708B;
+}
+
+h2{
+    margin: 10px;
+    color: #4E708B;
+    border-bottom: #A4BACC solid 5px;
+    margin-top: 35px;
+}
+p{
+    margin: 10px;
+    text-align: justify;
+    color: #535353;
+}
+p strong{
+    color: #6a9eff;
+}
+p a{
+    color: #54A800;
+    text-decoration: none;
+    transition: all 0.75s;
+}
+p a:hover{
+    color: #254A00;
+    text-decoration: none;
+}
+
+.right{
+    float: right;
+    padding: 15px;
+
+}
+.left{
+    float: left;
+    padding: 5px;
+}
+
+.kucukyazi{
+    font-size: x-small;
+}
+#alt{
+    margin-top: 50px;
+    background-color: #666;
+    color: #FFF;
+    padding: 7px; 
+}

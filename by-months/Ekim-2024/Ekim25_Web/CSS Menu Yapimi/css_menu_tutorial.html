@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menü Özellikleri</title>
+    <link rel="stylesheet" href="css/bicimler.css" />
+  </head>
+
+  <body>
+    <div id="kaplayici">
+      <div id="banner">
+        <b><span class="mavi">CSS</span> ILE MENU NASIL YAPILIR?</b>
+      </div>
+
+      <div id="menu">
+        <div>
+          <ul>
+            <li><a href="#adim1">Adım1</a></li>
+            <li><a href="#adim2">Adım2</a></li>
+            <li><a href="#adim3">Adım3</a></li>
+            <li><a href="#adim4">Adım4</a></li>
+            <li><a href="#adim5">Adım5</a></li>
+          </ul>
+        </div>
+        <div class="temizle"></div>
+      </div>
+
+      <div id="icerik">
+        <h1><span class="mavi">CSS</span> Menü Yapımı</h1>
+        <ul>
+          <li>
+            <a name="adim1"></a>
+            <p>
+              Menü, çoğu zaman div içerisindeki sırasız listeden yapılır.
+              Öncelikle bir div oluşturularak sırasız liste içindeki linkleri
+              oluşturunuz. (div'in id'si <strong>menu</strong> olsun)
+            </p>
+            <p>
+              <img src="resimler/div-ul.png" alt="div ul" />
+            </p>
+          </li>
+
+          <li>
+            <a name="adim2"></a>
+            <p>
+              <span class="mavi">CSS</span> ile ilk olarak <strong>ul</strong> etiketi seçilir. Listenin
+              etiketleri kaldırılır. Boşluklar sıfırlanır
+            </p>
+
+            <p><img src="resimler/ul-css.png" alt="" /></p>
+          </li>
+
+          <li>
+            <a name="adim3"></a>
+            <p>
+              Menü yan yana olacaksa <strong>li</strong> etiketi seçilir.
+              <strong>float:left;</strong>
+              özelliği ile yan yana getirilir
+            </p>
+
+            <p>
+              <img src="resimler/li-css.png" alt="" />
+            </p>
+          </li>
+
+          <li>
+            <a name="adim4"></a>
+            <p>
+              Bu aşamada float etkisinden dolayı menü kaymış gibi görünür. Bunu
+              Düzeltmek için float etkisini temizlemek gerekir.Bunun için ul
+              etiketinden sonra temizle sınıfına sahip bir div eklenir yani menü
+              divi kapanmadan önce eklenir
+            </p>
+
+            <p><img src="resimler/div-temizle.png" alt="" /></p>
+            <p>
+              <strong>temizle</strong> sınıfına
+              <strong>clear:both;</strong> özelliği eklenir
+            </p>
+            <p><img src="resimler/temizle-css.png" alt="" /></p>
+          </li>
+
+          <li>
+            <a name="adim5"></a>
+            <p>
+              Sonra <strong>a</strong> etiketleri seçilir.
+              <strong>a</strong> etiketlerinin ilk özelliği
+              <strong>display:block;</strong> özelliğidir. Ondan sonra
+              <strong>a</strong> etiketlerinin nasıl görünmesini istiyorsanız o
+              özellikleri ekleyebilirsiniz.
+            </p>
+
+            <p><img src="resimler/a-css.png" alt="" /></p>
+          </li>
+
+          <li>
+            <p>
+              <strong>a</strong> etiketlerinin fare üzerine gelinceki durumu
+              için a etiketinin aynı seçicisi tekrar yazılıp sonuna
+              <strong>:hover</strong> eklenir ve istenilen özellikler yazılır
+            </p>
+            <p><img src="resimler/a-hover-css.png" alt="" /></p>
+          </li>
+        </ul>
+      </div>
+      <!-- İçerik sonu -->
+      <div id="alt">
+        Hazırlayan: Devrim Mert Ciddi <br /><span id="mor">
+          Discord: umneyleand</span
+        >
+        <br />
+        Instagram: dvrim.mrt ihtiyacınız olursa iletişime geçebilirsiniz
+      </div>
+      <!--alt div sonu -->
+    </div>
+    <!-- kaplayici div sonu   -->
+  </body>
+</html>

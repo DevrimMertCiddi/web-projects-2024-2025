@@ -1,0 +1,10 @@
+body{
+    background-image: url(../resimler/body-bg.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.galeri{
+    padding: 5px;
+    background-color: white;
+}

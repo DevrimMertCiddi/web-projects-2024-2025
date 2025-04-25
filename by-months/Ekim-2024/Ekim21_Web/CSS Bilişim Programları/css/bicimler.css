@@ -1,0 +1,132 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body{
+    background-image: url(../resimler/back_ebru.jpg);
+    background-attachment: fixed;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+
+#kaplayici{   
+    width: 1150px;
+    margin: auto;
+    background-color: #666666;
+    border: 1px solid #9966ff;
+}
+
+#ust{
+    background-image: url(../resimler/bannerresmi.jpg);
+    height: 126px;
+    padding-left: 10px;
+    background-size:cover;
+    
+}
+
+#ust h1{
+    margin: 0;
+    font-size: 40px;
+    line-height: 126px;
+    /*bir div içerisinde bulunan yazı veya nesne o divin dikeyde tam ortasında olması istenirse divin yüksekliği kadar o yazıya line-height satır yüksekliği verilir*/
+}
+
+#beyaz{
+    color: white;
+}
+
+#mavi{
+    color: rgb(0, 94, 255);
+}
+
+.kutu{
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+.kutu h2{
+    background-color: #240063;
+    color: #ffff;
+    margin: -10px;
+    padding: 15px;
+}
+
+.cc{
+    color: palevioletred;
+}
+
+.sag-resim{
+    border: 1px solid #9966ff;
+    float: right;
+    margin-left: 10px;
+}
+
+.sol-resim{
+    border: 1px solid #9966ff;
+    float: left;
+    margin-right: 10px;
+}
+
+p{
+    text-align: justify;
+    line-height: 150%;
+    color: #333;
+}
+strong{
+    background-color: #afafaf;
+}
+
+#alt{
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: small;
+}
+
+
+
+#menu{
+ padding: 5px 5%;
+ 
+}
+
+#menu div{
+    width: 800px;
+    margin: auto;
+}
+
+#menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#menu ul li{
+    
+
+}
+
+#menu ul li a{
+    display: block;
+    text-decoration: none;
+    background-color: black;
+    color: #fff;
+    padding: 5px 10px;
+    margin-right: 2px;
+    transition: all 1s;
+    border-radius: 10px;
+
+    
+}
+
+
+#menu ul li a:hover{
+    font-family: "Space Mono", monospace;
+    background-color: #fff;
+    color: black;
+    box-shadow: 0 0 20px #fff;
+
+}

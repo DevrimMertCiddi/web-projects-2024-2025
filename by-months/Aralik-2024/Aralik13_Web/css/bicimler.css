@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Markazi Text", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.kapsayici {
+  width: 1140px;
+  margin: auto;
+}
+
+/*--------------------satır 1----------------------*/
+.satir1 {
+  background-color: #111;
+  position: sticky;
+  top: 0;
+}
+
+.satir1 .kapsayici {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.logo {
+  flex: 1;
+}
+
+.menu {
+  flex: 4;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.menu ul li a {
+  display: block;
+  text-decoration: none;
+  color: #cccacc;
+  padding: 0 15px;
+  border-right: 1px solid #383737;
+}
+
+.menu ul li:last-child a {
+  border-right: none;
+}
+
+.menu ul li a:hover {
+  color: white;
+}
+
+/*-------------------satır2-----------------------*/
+
+.satir2 {
+  background-image: url(../resimler/ust-bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 600px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 1.2em;
+  text-shadow: 0 0 15px black;
+  text-align: center;
+}
+
+/*-------------------satır3-----------------------*/
+
+.satir3 {
+  background-color: azure;
+  padding: 15px 0;
+}
+
+.satir3 .kapsayici {
+  display: flex;
+  align-items: center;
+}
+
+.mesaj {
+  flex: 3;
+}
+
+.dugme {
+  flex: 1;
+  text-align: right;
+}
+
+.turuncu {
+  color: #ff7700;
+}
+
+.dugme a {
+  background-color: #ff7700;
+  color: white;
+  text-decoration: none;
+  padding: 15px 25px;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.dugme a:hover {
+  background-color: orange;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+/*-------------------satır4-----------------------*/
+
+.satir4 {
+  background-color: #ff7700;
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.satir4 .kapsayici {
+  display: flex;
+  align-items: center;
+  min-height: 500px;
+  flex-wrap: wrap;
+}
+
+.satir4 h1 {
+  flex-basis: 100%;
+}
+
+.hizmet {
+  flex: 1;
+}
+
+/*-------------------satır5-----------------------*/
+.satir5 {
+  background-color: azure;
+  text-align: center;
+}
+
+.satir5 .kapsayici {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+.satir5 h1 {
+  flex-basis: 100%;
+}
+
+.hakkimizda {
+  flex-basis: 60%;
+}
+
+.hakkimizdaresim {
+  width: 40%;
+}
+
+.eleman {
+  flex: 1;
+  margin-top: 30px;
+}
+
+.eleman img {
+  border-radius: 50%;
+  width: 176px;
+  height: 176px;
+  object-fit: contain;
+  background-color: #111;
+}
+
+.eleman h2 {
+  margin: 0;
+}
+
+.eleman p {
+  margin: 0;
+  color: #666;
+}
+/*-------------------satır6-----------------------*/
+.satir6 {
+  background-image: url(../resimler/ust-bg.jpg);
+  min-height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 1.1em;
+  text-align: center;
+  font-style: italic;
+}
+
+.satir6 .kapsayici .roket {
+  font-size: 5em;
+  text-align: center;
+}
+
+.satir6 .kapsayici {
+  color: white;
+  font-style: italic;
+}
+
+.satir6 .kapsayici .tirnak {
+  font-size: 3em;
+  color: #ff7700;
+}
+/*-------------------satır7-----------------------*/
+
+.satir7 .kapsayici {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.satir7 h1 {
+  flex-basis: 100%;
+  text-align: center;
+}
+.satir7 img {
+  flex: 1;
+  width: 215px;
+  margin-right: 10px;
+}
+
+/*-------------------satır8-----------------------*/
+
+.satir8 {
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: rgb(0, 102, 255);
+}
+
+.satir8 .kapsayici {
+  text-align: center;
+}
+
+.satir8 .kapsayici p {
+  color: white;
+  margin: 0 auto;
+}
+
+.satir8 .kapsayici a {
+  color: white;
+  font-size: 2em;
+  margin: 0 auto;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olaylar</title>
+
+
+    <style>
+        #menu{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        #menu li{
+            display: block;
+            width: 50px;
+            border: 1px solid black;
+            margin-right: 5px;
+            padding: 15px;
+            background-color: bisque;
+            text-align: center;
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <ul id="menu">
+        <li onmouseover="degistir(0)">Kedi</li>
+        <li onmouseover="degistir(1)">Köpek</li>
+        <li onmouseover="degistir(2)">Papağan</li>
+        <li onmouseover="degistir(3)">Tavşan</li>
+    </ul>
+
+    <p>
+        <img src="resimler/hayvanlar/kedi.jpg" alt="" id="resim">
+    </p>
+
+
+    <script>
+            function degistir(gelen){
+                var resim = document.getElementById("resim");
+                switch(gelen){
+                    case 0: resim.src="resimler/hayvanlar/kedi.jpg"; break;
+                    case 1: resim.src="resimler/hayvanlar/kopek.jpg"; break;
+                    case 2: resim.src="resimler/hayvanlar/papagan.jpg"; break;
+                    break;
+                    default: resim.src="resimler/hayvanlar/tavsan.jpg"
+                }
+            }
+    </script>
+
+</body>
+</html>

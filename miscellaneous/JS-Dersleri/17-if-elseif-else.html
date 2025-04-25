@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alışveriş Tutarı</title>
+</head>
+<body>
+    <form name="form1">
+        <p>
+            <label for="">Alışveriş Tutarı:</label>
+            <br>
+            <input type="number" name="tutar">
+        </p>
+        
+        <p>
+            <label for="">Müşteri Türü</label>
+            <br>
+            <select name="musteri" id="">
+                <option value="0">Öğrenci (25%)</option>
+                <option value="1">Üye (30%)</option>
+                <option value="2">Normal (10%)</option>
+                <option value="3">Özel Müşteri (50%)</option>
+            </select>
+        </p>
+
+
+        <p>
+            <button type="button" onclick="hesapla()">
+                Hesapla
+            </button>
+        </p>
+
+        <p id="sonuc"></p>
+
+
+
+    </form>
+
+
+    <script>
+        function hesapla(){
+            var fiyat = document.forms["form1"]["tutar"].value;
+            var mturu = document.forms["form1"]["musteri"].value;
+            var sonFiyat;
+            if(mturu==0){
+                sonFiyat=fiyat-(fiyat/100)*25;
+                document.getElementById("sonuc").innerHTML="İndirimli Sonfiyat:"+sonFiyat;
+            }
+
+            else if (mturu==1){
+                sonFiyat=fiyat*0.70;
+                document.getElementById("sonuc").innerHTML="İndirimli Sonfiyat:"+sonFiyat;
+            }
+
+            else if (mturu==2){
+                sonFiyat=fiyat*0.90;
+                document.getElementById("sonuc").innerHTML="İndirimli Sonfiyat:"+sonFiyat;
+            }
+
+
+            else{
+                sonFiyat=fiyat*0.50;
+                document.getElementById("sonuc").innerHTML="İndirimli Sonfiyat:"+sonFiyat + "₺";
+            }
+        }
+    </script>
+
+
+</body>
+</html>

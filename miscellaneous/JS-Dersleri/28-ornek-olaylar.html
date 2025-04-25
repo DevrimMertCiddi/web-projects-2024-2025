@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>olaylar</title>
+</head>
+
+<body>
+
+
+    <select name="hayvun" id="hayvanlar" onchange="degistir(this.value)">
+        <option value="0" onmouseover="gelen(0)">Kedi</option>
+        <option value="1" onmouseover="gelen(1)">Köpek</option>
+        <option value="2" onmouseover="gelen(2)">Papağan</option>
+        <option value="3" onmouseover="gelen(3)">Tavşan</option>
+    </select>
+
+    <p><img src="resimler/hayvanlar/kedi.jpg" id="resim"></p>
+
+    <script>
+        var resim = document.getElementById("resim");
+        switch (degisti(gelen)) {
+            case "0": resim.src = "resimler/hayvanlar/kedi.jpg"; break;
+            case "1": resim.src = "resimler/hayvanlar/kopek.jpg"; break;
+            case "2": resim.src = "resimler/hayvanlar/papagan.jpg"; break;
+            case "3": resim.src = "resimler/hayvanlar/tavsan.jpg"; break;
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>

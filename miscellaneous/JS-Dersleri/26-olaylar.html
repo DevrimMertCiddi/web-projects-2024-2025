@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olaylar</title>
+</head>
+
+<body onload="merhaba()">
+
+    <h1 id="baslik"></h1>
+
+
+    <p>
+        <img src="resimler/lamba-kapali.gif" alt="" onmouseover="this.src='resimler/lamba-acik.gif'"
+            onmouseout="this.src='resimler/lamba-kapali.gif'">
+    </p>
+
+
+    <p>
+        <button onmouseover="this.disabled=true" onmouseout="this.disabled=false">Sıkıysa Tıkla!</button>
+    </p>
+
+
+    <p>
+        <label for="">Yazı Yazınız</label><br>
+        <input type="text" name="metin" onkeyup="document.getElementById('yazi').innerHTML=this.value;">
+    </p>
+
+    <p id="yazi">
+
+    </p>
+
+
+    <p>
+        <label>
+            Onaylıyor musunuz?
+        </label><br>
+        <input type="checkbox" name="durum" onchange="kontrol(this.checked)">EVET <br>
+
+    </p>
+
+    <p>
+        <button type="button" id="dugme" disabled>Devam</button>
+    </p>
+
+
+    <script>
+
+        function kontrol(isaret){
+            if(isaret==true){
+                document.getElementById("dugme").disabled = false;                
+            }
+
+            else{
+                document.getElementById("dugme").disabled = true; 
+            }
+        }
+
+        function merhaba() {
+            var adi = prompt("adiniz");
+            document.getElementById("baslik").innerHTML = "Merhaba " + adi;
+        }
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vücut Kitle İndeksi</title>
+
+    <script>
+        function vkiHesapla(){
+            var boy = prompt("Boyunuz (m)");
+            var kilo = prompt("Kilonuz (kg)");
+            boy = boy/100;
+            var vki = kilo / (boy*boy);
+            alert("Vücut Kitle İndeksiniz: "+vki);
+        }
+        function obezMiyim(){
+            var boy = prompt("Boyunuz (m)");
+            var kilo = prompt("Kilonuz (kg)");
+            boy = boy/100;
+            var vki = kilo / (boy*boy);
+            // 18 altı zayıf
+            // 18-24 arası normal
+            // 25-29 arası şişko
+            // 30-34 1. derece obez
+            // 35-39 2. derece obez
+            // 40 üstü 3. derece morbit obez
+
+            if(vki<18){
+                alert("Zayıfsın");
+            }
+            else if(vki<25){
+                alert("Normalsin");
+            }
+            else if(vki<30){
+                alert("Şişkosun");
+            }
+            else if(vki<35){
+                alert("1 derece obezsin");
+            }
+            else if(vki<40){
+                alert("2. derece obezsin");
+            }
+            else{
+                alert("3. derece morbit obezsin");
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="vkiHesapla();">Vücut Kitle İndeksim Nedir?</button>
+    <button onclick="obezMiyim();">Obez miyim?</button>
+</body>
+</html>

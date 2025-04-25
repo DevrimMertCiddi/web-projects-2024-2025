@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script>
+        function ehliyet(){
+            var dogumYil = document.forms["ehliyetForm"]["dogumYil"].value;
+            var yas = 2025 - dogumYil;
+            if(yas<18){
+                document.getElementById("ehliyetSonuc").innerHTML = "Ehliyet Alamazsınız.";
+                document.getElementById("ehliyetSonuc").className = "alert alert-danger";
+            }
+            else{
+                document.getElementById("ehliyetSonuc").innerHTML = "Ehliyet Alabilirsiniz.";
+                document.getElementById("ehliyetSonuc").className = "alert alert-success";
+            }
+        }
+        function doviz(){
+            var dovizKur = document.getElementById("dovizSec").value;
+            var dovizMiktar = prompt("TL miktarını giriniz");
+            
+            var tl;
+            if(dovizKur=="dolar"){
+                tl=dovizMiktar/36;
+            }
+            else if(dovizKur=="euro"){
+                tl=dovizMiktar/38;
+            }
+            else{
+                tl=dovizMiktar/45;
+            }
+            
+            document.getElementById("dovizSonuc").className = "alert alert-primary";
+            document.getElementById("dovizSonuc").innerHTML = "Döviz Miktarı: " + tl;
+        }
+    </script>
+  </head>
+  <body style="background-color: #cdcdcd;">
+    <div class="container bg-light rounded-4">
+        <div class="row mt-5 p-4 ">
+            <div class="col-6">
+                <form action="" name="ehliyetForm" onsubmit="ehliyet(); return false; ">
+                    <p>
+                        <label for="">Doğum yılınızı giriniz</label> <br>
+                        <input class="form-control" type="text" name="dogumYil" id="">
+                    </p>
+                    <p>
+                        <button class="btn btn-primary" type="submit">Ehliyet alabilir miyim?</button>
+                    </p>
+                    <h5 id="ehliyetSonuc"></h5>
+                </form>
+            </div>
+            <div class="col-6">
+                    <p>
+                        <label for="">Döviz seçiniz</label> <br>
+                        <select class="form-control" id="dovizSec">
+                            <option value="dolar">Dolar</option>
+                            <option value="euro">Euro</option>
+                            <option value="sterlin">Sterlin</option>
+                        </select>
+                    </p>
+                    <p>
+                        <button class="btn btn-primary" onclick="doviz();">Döviz Al</button>
+                    </p>
+                    <h5 id="dovizSonuc"></h5>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

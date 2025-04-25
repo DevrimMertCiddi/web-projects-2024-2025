@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elemanları</title>
+</head>
+
+<body bgcolor="#9df9ef">
+    <h1>FORM ELEMANLARI</h1>
+    <ol>
+
+        <li>Metin Kutusu(textbox)</li>
+        <li>Şifre Kutusu(password)</li>
+        <li>Onay Kutusu(checkbox)</li>
+        <li>Radyo Duğmesi(radio)</li>
+        <li>Metin Alanı(textarea)</li>
+        <li>Açılır Liste (select)</li>
+        <li>Dosya Seçim Elemanı(file)</li>
+        <li>Gizli Elemanlar(hidden)</li>
+        <li>Sıfırlama Düğmesi(reset)</li>
+        <li>Gönder Düğmesi(submit)</li>
+        <li>Gruplandırma Elemanı(fieldset)</li>
+        <li>Genel Amaçlı Düğme(button)</li>
+
+    </ol>
+    <p>
+        <font size="+2"><b>Not: Form Elemanları kullanılırken form etiketleri arasına yazılır</b></font>
+    </p>
+    <form name="isim" method="post" action="hedef">
+
+        <h2>Metin Kutus(textbox):</h2>
+        <input type="text" name="ad" id="" maxlength="5" readonly value="Merhaba Dünya(BUYAZIYI SİLEMEZSİN)">
+
+        <hr>
+
+        <h2>Şifre Kutusu(password):</h2>
+        <input type="password" name="sifre" id="" placeholder="Parolanızı Giriniz">
+
+        <hr>
+
+        <h2>Onay Kutusu(checkbox)</h2>
+        Merhaba ben soldayım <input type="checkbox" name="onay" id="" checked> Checked Parametresinden dolayı işaretleri
+        olarak geldim
+
+        <hr>
+
+        <h2>Radyo Butonu(radio)</h2>
+        Erkek <input type="radio" name="Cinsiyet" id="">
+        Kadın <input type="radio" name="Cinsiyet" id="">
+
+        <hr>
+
+        <h2>Metin Alanı(textarea)</h2>
+        <textarea name="mesaj" cols="40" rows="7" placeholder="Mesajınızı Buraya Yazınız.........."></textarea>
+        <font size="+2">← Beni sağa sola çekerek büyütebilirsin!</font>
+
+        <hr>
+
+        <h2>Açılır Liste(select)</h2>
+        <font size="+2">Ben 4elemanı Olan Bir Açılır Listeyim Benden Bir Eleman Seç!</font><select name="ögrenim" id="">
+            <option value="1">İlkokul</option>
+            <option value="2">Ortaokul</option>
+            <option value="3">Lise</option>
+            <option value="4">Üniverite</option>
+        </select>
+
+        <hr>
+
+        <h2>Dosya Seçim Elemanı (file)</h2>
+        <font size="+2">Benden Bir Dosya Seçebilirsin</font><input type="file" name="dosya" id="">
+
+        <hr>
+
+        <h2>Gizli Elemanlar (hidden)</h2>
+        <input type="hidden" name="bilgi" value="11111111111">
+
+        <hr>
+
+
+        <h2>Sıfırlama Düğmesi(reset)</h2>
+        <font size="+2">Bana Basarsan Herşeyi ilk Haline Döndürürüm Adeta Bir Zaman Makinesiyim!</font><input
+            type="reset" value="Temizle">
+
+        <hr>
+
+        <h2>Gönder Düğmesi (submit)</h2>
+        <input type="submit" value="kaydet">
+
+        <hr>
+        
+        <h2>Gruplandırma Elemanı (fieldset)</h2>
+
+        <font size="+2">Ben fieldsetim aşağıdaki elemanları rehin aldım (grupladım)</font><fieldset>
+            <legend>BENDE LEGENDIM FİELDSETİN REHİN ALDIĞI ELEMANLARA BAŞLIK GÖREVİ GÖRÜYORUM</legend>
+            <i><font size="+4">YARDIM EDİN!</font></i> <br>
+            <i><font size="+4">YARDIM EDİN! DLC</font></i> <br>
+            <i><font size="+4">YARDIM EDİN! 2</font></i>
+        </fieldset>
+
+        <hr>
+
+        <h2>Genel Amaçlı Düğme(button)</h2>
+        <button name="" value="">
+            <img src="resimler/images.jpg" alt="" width="100">
+        </button>
+        <font size="+2">BEN KÖFTECİ YUSUFTAN KAÇMIŞ BİR BUTTONUM ANCAK BİR İŞLEVİM ŞUANLIK YOK</font >
+    </form>
+</body>
+
+</html>

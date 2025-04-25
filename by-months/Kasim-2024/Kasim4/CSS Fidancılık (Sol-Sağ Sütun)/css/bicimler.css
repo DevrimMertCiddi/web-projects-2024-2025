@@ -1,0 +1,145 @@
+.kapsayici{
+    width: 940px;
+    margin:auto;
+
+}
+
+.logo{
+    float: left;
+    margin-right: 20px;
+}
+
+.temizle{
+    clear: both;
+}
+
+body{
+    background: url(../resimler/bulut.png) repeat-x,url(../resimler/gunes.png) no-repeat top right;
+    background-color: #3399fe;
+    font-family: sans-serif;
+    font-size: 0.9em;
+    background-attachment: fixed;
+    text-align: justify;
+}
+
+.baslik{
+    font-size: 3em;
+    color: white;
+    text-shadow: -5px 5px 15px black;
+    padding-top: 10px;
+}
+
+nav{
+    background: url(../resimler/cimen.png) repeat-x;
+    height: 64px;
+    margin-top: -40px;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    float: right;
+    display: flex;
+}
+
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-left: 5px;
+    background-color: #523405;
+    padding: 10px 20px;
+    border-radius: 20px 20px 0 0;
+    margin-top: 27.5px;
+    transition: all 0.3s;
+}
+
+nav ul li a:hover{
+    background-color: white;
+    color: #523405;
+
+}
+
+.icerik{
+    background-color: white;
+}
+
+.sol-icerik{
+    float: left;
+    width: 70%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.sag-icerik{
+    width: 30%;
+    float: left;
+    padding: 15px;
+    box-sizing: border-box;
+    line-height: 150%;
+}
+
+.sag-resim{
+    float:right;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    padding: 5px;
+    margin-left: 10px;
+    transition: all 0.5s;
+}
+
+.sol-resim{
+    float: left;
+    width: 200px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.sol-icerik a{
+    background: url(../resimler/yaprak.png) no-repeat;
+    padding-left: 20px;
+    
+}
+
+.sag-icerik ul{
+    list-style-image: url(../resimler/sayfa.png);
+}
+
+.sag-icerik a{
+    color: #333;
+    text-decoration: none;
+}
+
+.sag-icerik a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+.alt-icerik{
+    background-color: #276332;
+}
+
+.kutu-icerik{
+    float: left;
+    width: 33.33%;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    text-indent: 10px;
+}
+
+.kutu-icerik h3{
+    border-bottom: 1px solid white;
+
+}
+
+footer{
+    background: url(../resimler/alt-resim.png) no-repeat;
+    color: white;
+    height: 140px;
+    text-align: right;
+    padding: 10px;
+}

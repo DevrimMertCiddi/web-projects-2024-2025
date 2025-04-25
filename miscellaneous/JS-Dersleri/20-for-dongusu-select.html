@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Döngüsü</title>
+
+    <script>
+       var il = document.forms["form1"]["iller"];
+    </script>
+</head>
+<body>
+    <h1>İl Seçiniz</h1>
+    <form name="form1">
+        <select name="iller" id="">
+            <script>
+                 for(var i=1;i<=81;i++){
+                 if(i<10){
+                    document.write("<option>"+"0"+i+"</option>");
+                 }
+                 else{
+                    document.write("<option>"+i+"</option>");
+                 }
+                }
+            </script>
+
+        </select>
+    </form>
+
+</body>
+</html>
