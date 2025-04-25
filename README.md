@@ -8,6 +8,11 @@ Welcome to my web projects repository! This collection contains all the web proj
 - **Academic Year**: 2024-2025
 - **Grade**: 11th Grade
 
+## 👨‍💻 About Me
+Hello! My name is **Devrim Mert Ciddi**, and I am currently a student at **Düzce Akçakoca Piri Reis Mesleki ve Teknik Anadolu Lisesi**. I am in the **11th grade** and pursuing my studies in Information Technology. I have a strong passion for software development, web design, and programming. Throughout the year, I have worked on various web projects that helped me develop my skills in **HTML**, **CSS**, and **JavaScript**.
+
+I'm always eager to learn more about technology and improve my skills. In the future, I plan to continue exploring software development, create more advanced projects, and contribute to open-source communities.
+
 ## 🎯 Purpose
 
 The goal of this repository is to serve as a reference for future students at my school. I aim to help them understand what kinds of projects they will work on and encourage them to keep track of their own progress. While I'm aware that the file organization isn't perfect, this repository is meant to show what I have learned throughout the year.
